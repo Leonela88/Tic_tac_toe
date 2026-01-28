@@ -25,4 +25,19 @@ public class Board {
         int col = (pos - 1) % 3;
         board[row][col] = symbol;
     }
+   public boolean isGameFinished(char symbol) { 
+        if (hasWon(symbol)) {
+            print();
+            System.out.println(symbol + " wins!");
+            return true;
+        }
+        for (char[] row : board) {
+            for (char c : row) {
+                if (c == ' ') return false;
+            }
+        }
+        print();
+        System.out.println("Tie!");
+        return true;
+    } 
 }
