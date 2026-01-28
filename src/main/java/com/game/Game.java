@@ -14,4 +14,23 @@ public class Game {
         player = new Player('X', scanner);
         computer = new Player('O');
     }
+
+    public void start() {
+        board.print();
+
+        while (true) {
+            player.play(board);
+            if (board.isGameFinished('X'))
+                break;
+            board.print();
+
+            computer.playRandom(board);
+            if (board.isGameFinished('O'))
+                break;
+            board.print();
+        }
+
+        scanner.close();
+    }
+
 }
