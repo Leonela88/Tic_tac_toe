@@ -20,7 +20,7 @@ public class Player {
 
     public void play(Board board) { 
         int move;
-        While (true){
+        while (true){
           System.out.println("Elige posicion (1-9):");  
           move = Integer.parseInt(scanner.nextLine());
           if (board.isValidMove(move)) break;
