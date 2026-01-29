@@ -36,6 +36,7 @@ public class Player {
             }
 
             break;
+      
         }
 
         board.placeMove(move, symbol);
