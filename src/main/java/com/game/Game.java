@@ -23,6 +23,7 @@ public class Game {
     }
 
     public void start() {
+        instructionsGame();
         board.print();
         while (true) {
             player.play(board);
