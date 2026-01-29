@@ -28,7 +28,7 @@ public class Board {
    public boolean isGameFinished(char symbol) { 
         if (hasWon(symbol)) {
             print();
-            System.out.println(symbol + " wins!");
+            System.out.println(symbol + " Gana!");
             return true;
         }
         for (char[] row : board) {
@@ -37,7 +37,7 @@ public class Board {
             }
         }
         print();
-        System.out.println("Tie!");
+        System.out.println("Es un empate!");
         return true;
     } 
     private boolean hasWon(char s) {
