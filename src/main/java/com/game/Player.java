@@ -22,7 +22,7 @@ public class Player {
         int move;
 
         while (true) {
-            System.out.println();
+            System.out.println("Elije una posicion valida");
             move = Integer.parseInt(scanner.nextLine());
 
             if (move < 1 || move > 9) {
@@ -36,7 +36,7 @@ public class Player {
             }
 
             break;
-      
+
         }
 
         board.placeMove(move, symbol);
