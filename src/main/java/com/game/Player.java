@@ -22,7 +22,7 @@ public class Player {
         int move;
 
         while (true) {
-            System.out.println("Elige posición (1-9):");
+            System.out.println();
             move = Integer.parseInt(scanner.nextLine());
 
             if (move < 1 || move > 9) {
@@ -47,7 +47,8 @@ public class Player {
         do {
             move = random.nextInt(9) + 1;
         } while (!board.isValidMove(move));
-        System.out.println("Eleccion computadora " + move);
+        System.out.println();
+        System.out.println("Eleccion " + move);
         board.placeMove(move, symbol);
     }
 }
