@@ -48,7 +48,7 @@ public class Board {
     }
 
     private boolean hasWon(char s) {
-        return (board[0][0] == s && board[0][1] == s && board[0][2] == s) ||
+        return  (board[0][0] == s && board[0][1] == s && board[0][2] == s) ||
                 (board[1][0] == s && board[1][1] == s && board[1][2] == s) ||
                 (board[2][0] == s && board[2][1] == s && board[2][2] == s) ||
                 (board[0][0] == s && board[1][0] == s && board[2][0] == s) ||
